@@ -1,2 +1,6 @@
 image:
   file: .gitpod.Dockerfile
+tasks:
+  - name: Install Languages
+    command: sdk install java 8.0.302-open -y \
+             && sdk install scala 2.12.15
