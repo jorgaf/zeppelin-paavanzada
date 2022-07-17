@@ -6,4 +6,4 @@ RUN curl https://dlcdn.apache.org/zeppelin/zeppelin-0.10.1/zeppelin-0.10.1-bin-a
 RUN tar xvf zeppelin.tgz
 RUN sudo apt-get update \
     && sudo apt-get install cowsay -y
-RUN mkdir /workspace/utpl
+RUN mkdir -p /workspace/utpl
