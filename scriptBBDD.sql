@@ -1,9 +1,10 @@
 # Creación de BASE DE DATOS
 
+DROP DATABASE IF EXISTS `P_AVANZADA`;
 CREATE DATABASE P_AVANZADA;
-CREATE USER 'pavanzada'@'localhost' IDENTIFIED BY 'pAvanzada@utpl.edu.ec';
 
-GRANT ALL PRIVILEGES ON P_AVANZADA . * TO 'pAvanzada@utpl.edu.ec'@'localhost';
+# Creación del usuario
+CREATE USER IF NOT EXISTS 'pavanzada'@'localhost' IDENTIFIED BY 'pAvanzada@utpl.edu.ec';
 
 USE P_AVANZADA;
 
@@ -217,7 +218,9 @@ VALUES
 /*!40000 ALTER TABLE `SUBCLASIFICACION` ENABLE KEYS */;
 UNLOCK TABLES;
 
-
+#Otorgar privilegios
+GRANT ALL PRIVILEGES ON P_AVANZADA.* TO 'pavanzada'@'localhost';
+FLUSH PRIVILEGES;
 
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
