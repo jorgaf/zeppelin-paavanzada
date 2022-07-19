@@ -15,6 +15,5 @@ else
 mv /home/gitpod/utpl/spark-3.2.1-bin-hadoop3.2 /workspace/zeppelin-paavanzada
 fi
 sed -i -e 's/sdkman_auto_answer=false/sdkman_auto_answer=true/g' /home/gitpod/.sdkman/etc/config
-sdk install java 8.0.302-open
-sdk install scala 2.12.15
+
 export PATH=/workspace/zeppelin-paavanzada/zeppelin-0.10.1-bin-all/bin:$PATH

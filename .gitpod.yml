@@ -3,4 +3,6 @@ image:
 tasks:
   - name: Initializing
     before: chmod +rwx initScript.sh
-    command: ./initScript.sh
+    command: ./initScript.sh \
+             && sdk install java 8.0.302-open \
+             && sdk install scala 2.12.15
