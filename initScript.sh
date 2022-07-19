@@ -1,11 +1,11 @@
 echo 'Initializer script'
-base64 -d <<<"H4sIAAAAAAAAA51QWwqEMAz89xT52y4IuY1fgfEgOfzmUWMrKLgpTvNop+MQwYNexnxhIbUWSN6RNHyvLArrqXOlKE98YcpqEnnfcnhoAdPHwUUZ7tbNOjPah4khNDaSGEpqsVc0VgtRDVr1kY11A87DsYwFweIoIcpwrXqFZ/3L2k9lAe6DJdzhyVyn0tlNvTbmCBaOZ+O+beqPpHvlo3b3H1jYtUi4d/opCjrtLLxl4ZQgtFk6+MlVjnjDwuYC+S9Jd7b7yUZddhY++PJfLD/Ba+BxPQMAAA==" | gunzip
+base64 -d <<<"H4sIAAAAAAAAA61SQQrDMAy79xW+LYOCf7OTwX2IHz9bTp1k0EHZEqpYcaIIUSKNQTdHXBi3NjJQuSfS9EmsPKuY+p6FVpqKIqYuVXVQ9yWbpxeXfQSEKcfDd5NnRcfUcVTDQoKmpBd/xTAbTDW14mc186Y6DmO6ikIlUGDKcS++a1T9Sx6nkij3xoZ0eAk3pGxN0z431gEVxrO474vFI5le5Wg9/S8qHF4E6Y08xZRGnIWXKpwWhF5eTnly0RkvVPrPIyo92Z4nu3TFWfgll5/Hn1TeZ92C+I4DAAA=" | gunzip
 
 if [ -d zeppelin-0.10.1-bin-all ];
 then
 echo 'Existe Zeppelin. No Mover'
 else
-echo 'No existe. Mover'
+echo 'No existe. Mover Zeppelin'
 mv /home/gitpod/utpl/zeppelin-0.10.1-bin-all /workspace/zeppelin-paavanzada
 fi
 
@@ -13,7 +13,7 @@ if [ -d spark-3.2.1-bin-hadoop3.2 ]
 then
 echo 'Existe Spark. No mover'
 else
-echo 'No existe. Moviendo'
+echo 'No existe. Mover Spark'
 mv /home/gitpod/utpl/spark-3.2.1-bin-hadoop3.2 /workspace/zeppelin-paavanzada
 fi
 sed -i -e 's/sdkman_auto_answer=false/sdkman_auto_answer=true/g' /home/gitpod/.sdkman/etc/config
