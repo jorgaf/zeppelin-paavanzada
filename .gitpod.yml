@@ -6,5 +6,6 @@ tasks:
     command: sdk install java 8.0.302-open \
              && sdk install scala 2.12.15
   - name: Moving directories
+    before: chmod +rwx initScript.sh
     init: echo 'Moving directories. Please wait'
     command: ./initScript.sh
