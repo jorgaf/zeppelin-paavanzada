@@ -7,4 +7,4 @@ tasks:
              && sdk install scala 2.12.15
   - name: Moving directories
     init: echo 'Moving'
-    command: mv /home/gitpod/zeppelin-0.10.1-bin-all /home/workspace/paavanzada/
+    command: mv /home/gitpod/utpl/zeppelin-0.10.1-bin-all /workspace/zeppelin-paavanzada
