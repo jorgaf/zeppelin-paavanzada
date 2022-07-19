@@ -3,8 +3,8 @@ image:
 tasks:
   - name: Install Languages
     command: sed -i -e 's/sdkman_auto_answer=false/sdkman_auto_answer=true/g' /home/gitpod/.sdkman/etc/config \
-		         && sdk install java 8.0.302-open \
+             && sdk install java 8.0.302-open \
              && sdk install scala 2.12.15
   - name: Moving directories
-	  init: echo 'Moving'
-	  command: mv /home/gitpod/zeppelin-0.10.1-bin-all /home/workspace/paavanzada/
+          init: echo 'Moving'
+          command: mv /home/gitpod/zeppelin-0.10.1-bin-all /home/workspace/paavanzada/
