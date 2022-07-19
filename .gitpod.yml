@@ -2,9 +2,9 @@ image:
   file: .gitpod.Dockerfile
 tasks:
   - name: Install Languages
-    command: sed -i -e 's/sdkman_auto_answer=false/sdkman_auto_answer=true/g' /home/gitpod/.sdkman/etc/config \
-             && sdk install java 8.0.302-open \
+    before: sed -i -e 's/sdkman_auto_answer=false/sdkman_auto_answer=true/g' /home/gitpod/.sdkman/etc/config
+    command: sdk install java 8.0.302-open \
              && sdk install scala 2.12.15
   - name: Moving directories
-    init: echo 'Moving'
+    init: echo 'Moving directories. Please wait'
     command: mv /home/gitpod/utpl/zeppelin-0.10.1-bin-all /workspace/zeppelin-paavanzada
