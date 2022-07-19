@@ -11,7 +11,7 @@ if [ -d spark-3.2.1-bin-hadoop3.2 ]
 then
 echo 'Existe Spark. No mover'
 else
-'No existe. Moviendo'
+echo 'No existe. Moviendo'
 mv /home/gitpod/utpl/spark-3.2.1-bin-hadoop3.2 /workspace/zeppelin-paavanzada
 fi
 sed -i -e 's/sdkman_auto_answer=false/sdkman_auto_answer=true/g' /home/gitpod/.sdkman/etc/config
