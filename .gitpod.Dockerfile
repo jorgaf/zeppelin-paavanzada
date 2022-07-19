@@ -11,4 +11,3 @@ RUN mv spark-3.2.1-bin-hadoop3.2 /home/gitpod/utpl/spark-3.2.1-bin-hadoop3.2
 RUN mv zeppelin-0.10.1-bin-all /home/gitpod/utpl/zeppelin-0.10.1-bin-all
 RUN rm -f spark.tgz
 RUN rm -f zeppelin.tgz
-ENV PATH=/home/gitpod/utpl/zeppelin-0.10.1-bin-all/bin:$PATH
