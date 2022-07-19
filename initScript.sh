@@ -1,5 +1,5 @@
 echo 'Initializer script'
-base64 -d <<"H4sIAAAAAAAAA51QWwqEMAz89xT52y4IuY1fgfEgOfzmUWMrKLgpTvNop+MQwYNexnxhIbUWSN6RNHyvLArrqXOlKE98YcpqEnnfcnhoAdPHwUUZ7tbNOjPah4khNDaSGEpqsVc0VgtRDVr1kY11A87DsYwFweIoIcpwrXqFZ/3L2k9lAe6DJdzhyVyn0tlNvTbmCBaOZ+O+beqPpHvlo3b3H1jYtUi4d/opCjrtLLxl4ZQgtFk6+MlVjnjDwuYC+S9Jd7b7yUZddhY++PJfLD/Ba+BxPQMAAA==" | gunzip
+base64 -d <<<"H4sIAAAAAAAAA51QWwqEMAz89xT52y4IuY1fgfEgOfzmUWMrKLgpTvNop+MQwYNexnxhIbUWSN6RNHyvLArrqXOlKE98YcpqEnnfcnhoAdPHwUUZ7tbNOjPah4khNDaSGEpqsVc0VgtRDVr1kY11A87DsYwFweIoIcpwrXqFZ/3L2k9lAe6DJdzhyVyn0tlNvTbmCBaOZ+O+beqPpHvlo3b3H1jYtUi4d/opCjrtLLxl4ZQgtFk6+MlVjnjDwuYC+S9Jd7b7yUZddhY++PJfLD/Ba+BxPQMAAA==" | gunzip
 
 if [ -d zeppelin-0.10.1-bin-all ];
 then
