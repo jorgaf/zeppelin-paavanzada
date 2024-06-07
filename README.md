@@ -1,5 +1,5 @@
 # Programación Avanzada
-## Periodo académico: Abril - Agosto 2023
+## Periodo académico: Abril - Agosto 2024
 
 Este repositorio contiene los archivos a utilizarse en la asignatura de Programación Avanzada que se dicta en la carrera
 de Computación de la Universidad Técnica Particular de Loja.
@@ -13,16 +13,16 @@ las herramientas.
 
 El entorno tiene instalada las siguientes herramientas:
 
-- Hadoop 3.2
-- Zeppelin 0.10.1
-- Java 8.0.362
-- Scala 2.12.15
+- [Apache Spark](https://spark.apache.org/) 3.5.1 Pre-built for Apache Hadoop 3.3 and later
+- [Zeppelin 0.11.1](https://zeppelin.apache.org/)
+- Java 22
+- Scala 3.3.1
 - MySQL
 
-Adicionalmente se encuentran instaladas otras herramientas, como SDK que permitiran trabajar según los diferentes
-temas que se desarrollan durante la asignatura y que se usarán según las indicaciones que se suministre oportunamente.
+Adicionalmente se encuentran instaladas otras herramientas, como SDK que le permitiran trabajar según los diferentes
+temas que se desarrollan durante el ciclo académico y que se usarán según las indicaciones que se suministre oportunamente.
 
 ### Ejecutar entorno
-Para ejecutar el entorno debe hacer clic en el botón que se muestra a continuación:
+Para ejecutar el entorno debe hacer clic en el siguiente botón:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/jorgaf/zeppelin-paavanzada)
