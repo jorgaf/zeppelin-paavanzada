@@ -9,7 +9,7 @@ echo 'No existe. Mover Zeppelin'
 mv /home/gitpod/utpl/zeppelin-0.11.1-bin-all /workspace/zeppelin-paavanzada
 fi
 
-if [ -d spark-3.5.1-bin-hadoop3. ]
+if [ -d spark-3.5.1-bin-hadoop3 ];
 then
 echo 'Existe Spark. No mover'
 else
