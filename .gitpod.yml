@@ -4,6 +4,5 @@ tasks:
   - name: Initializing
     before: chmod +rwx initScript.sh
     command: ./initScript.sh \
-             && sdk update \
              && sdk install java 22-open \
              && sdk install scala 3.3.1
